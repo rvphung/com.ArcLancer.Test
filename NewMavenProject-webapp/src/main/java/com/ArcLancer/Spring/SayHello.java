@@ -8,13 +8,13 @@ public class SayHello {
 	public SayHello() {
 	}
 
+	@SuppressWarnings("resource")
 	public String SayHello2() {
 		
-		@SuppressWarnings("resource")
 		ApplicationContext applicationContext = new ClassPathXmlApplicationContext("SpringBeans.xml");
 
 		HelloBeans helloBeans = (HelloBeans) applicationContext.getBean("helloBeans");
-
+				
 		return helloBeans.getMessage();
 	}
 }
