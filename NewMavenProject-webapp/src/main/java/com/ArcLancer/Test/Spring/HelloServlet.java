@@ -1,4 +1,4 @@
-package com.ArcLancer.Test;
+package com.ArcLancer.Test.Spring;
 
 import java.io.IOException;
 import javax.servlet.ServletException;

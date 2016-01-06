@@ -1,4 +1,4 @@
-package com.ArcLancer.Test;
+package com.ArcLancer.Test.DAO;
 
 import java.sql.*;
 

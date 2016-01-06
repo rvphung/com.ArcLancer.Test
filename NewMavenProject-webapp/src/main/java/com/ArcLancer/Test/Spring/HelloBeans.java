@@ -1,4 +1,4 @@
-package com.ArcLancer.Test;
+package com.ArcLancer.Test.Spring;
 
 public class HelloBeans {
 
