@@ -1,4 +1,4 @@
-package com.ArcLancer.Spring;
+package com.ArcLancer.Test;
 
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
