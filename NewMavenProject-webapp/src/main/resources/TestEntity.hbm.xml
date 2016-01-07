@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016/1/6 ?U?? 04:24:18 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+	<class name="com.ArcLancer.Test.Hibernate.TestEntity" table="TESTENTITY">
+		<id name="rowid" type="int">
+			<column name="ROWID" />
+			<generator class="identity" />
+		</id>
+		<property name="_id" type="int">
+			<column name="_ID" />
+		</property>
+		<property name="name" type="java.lang.String">
+			<column name="NAME" />
+		</property>
+	</class>
+</hibernate-mapping>

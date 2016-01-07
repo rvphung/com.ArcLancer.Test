@@ -26,18 +26,10 @@ public class MySQL {
 
 		return connection;
 	}
-
-	public void createTable(Connection connection) throws SQLException {
-
-		String stringSqlString = "DROP TABLE IF EXISTS Test; CREATE TABLE Test (_id integer, Name string); ";
-		Statement statement = null;
-		statement = connection.createStatement();
-		statement.executeUpdate(stringSqlString);
-	}
-
+	
 	public void insert(Connection connection, int int_id, String stringName) throws SQLException {
 
-		String stringSqlString = "INSERT INTO Test (_id, Name) VALUES(?, ?) ";
+		String stringSqlString = "INSERT INTO TestEntity (_id, Name) VALUES(?, ?) ";
 
 		PreparedStatement preparedStatement = null;
 		preparedStatement = connection.prepareStatement(stringSqlString);
@@ -50,7 +42,7 @@ public class MySQL {
 
 	public String selectAll(Connection connection) throws SQLException {
 
-		String stringSqlString = "SELECT * FROM Test ";
+		String stringSqlString = "SELECT * FROM TestEntity ";
 		String stringResultSet = null;
 
 		Statement statement = null;

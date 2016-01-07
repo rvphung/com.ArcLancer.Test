@@ -5,6 +5,8 @@
 
 <%@ page import="com.ArcLancer.Test.Spring.SayHello"%>
 <%@ page import="com.ArcLancer.Test.DAO.MySQL"%>
+<%@ page import="com.ArcLancer.Test.Hibernate.HibernateUtil"%>
+<%@ page import="com.ArcLancer.Test.Hibernate.TestEntityImplement"%>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
@@ -28,11 +30,13 @@
 	
 	MySQL mySQL = new MySQL();
 	Connection connection = mySQL.getConnection();
-	mySQL.insert(connection, 1, "TEST");
+	//mySQL.insert(connection, 1, "TEST");
+	
+	TestEntityImplement testEntityImplement = new TestEntityImplement();
+	testEntityImplement.performTestEntity();
 	
 	String stringResult = null;
 	stringResult += "<br />" + mySQL.selectAll(connection);
-	connection.close();
 %>
 
 <body>
